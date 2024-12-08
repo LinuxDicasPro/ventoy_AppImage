@@ -44,7 +44,7 @@ test ! -e $destdir && mkdir -p $destdir
 cd $destdir
 
 
-test -e "$prg-$version-$arch.AppImage" && {
+test -e "Ventoy-$version-$arch.AppImage" && {
     echo "appimage found!"
     exit 0
 }
