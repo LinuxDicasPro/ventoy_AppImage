@@ -132,12 +132,12 @@ cd ..
 printf "\n"; for ((i=0; i<$COLUMNS; i++)); { printf '─'; }; echo -e "\n"
 
 env ARCH=$arch ./appimagetool-x86_64.AppImage "$prg.AppDir"
-mv "${appimage_name// /_}-$arch.AppImage" "$prg-$version-$arch.AppImage"
+mv "${appimage_name// /_}-$arch.AppImage" "Ventoy-$version-$arch.AppImage"
 
 printf "\n"; for ((i=0; i<$COLUMNS; i++)); { printf '─'; }; echo -e "\n"
 
 rm -rf "$prg.AppDir"
 cd ..
 
-echo "appimage saved in $destdir/$prg-$version-$arch.AppImage"
+echo "appimage saved in $destdir/Ventoy-$version-$arch.AppImage"
 exit 0
